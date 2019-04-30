@@ -4,7 +4,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(resources/mist.jpg);
+    background-image: url(resources/proto/mist.jpg);
     background-size: cover;
     mix-blend-mode: lighten;
 }

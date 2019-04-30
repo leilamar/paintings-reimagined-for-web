@@ -19,17 +19,18 @@ body {
 
 #background {
     z-index: 1;
-    animation: wind 10s infinite ease;
+    animation: wind 5s infinite ease;
 }
 
 #man {
     z-index: 2;
+    transform-origin: 40% 90%;
     animation: shake 3s infinite ease;
 }
 
 #girl {
     z-index: 3;
-    transform-origin: 65% 20%; /* top-right TODO find right point */
+    transform-origin: 65% 20%;
     animation: swing 3s infinite ease-in-out;
 }
 
@@ -40,19 +41,13 @@ body {
 }
 
 @keyframes wind {
-    0% {transform: translateY(-5px) translateY(-1px) rotate(.1deg);}
-    50% {transform: translateX(2px) translateY(5px) rotateZ(-.1deg);}
-    100% {transform: translateX(-5px) translateY(-1px) rotate(.1deg);}
-}
-
-@keyframes flicker {
-    0% {transform: translateX(-2px) translateY(-1px) rotate(.1deg);}
-    50% {transform: translateX(2px) translateY(1px) rotateZ(-.1deg);}
-    100% {transform: translateX(-2px) translateY(-1px) rotate(.1deg);}
+    0% {transform: translateY(-5px) translateX(-5px) rotate(.5deg);}
+    50% {transform: translateX(2px) translateY(5px) rotateZ(-.5deg);}
+    100% {transform: translateX(-5px) translateY(-5px) rotate(.5deg);}
 }
 
 @keyframes shake {
-    0% {transform: translateX(-2px) rotate(.1deg);}
-    50% {transform: translateX(2px) rotateY(-.1deg);}
-    100% {transform: translateX(-2px) rotate(.1deg);}
+    0% {transform: rotate(-12deg);}
+    50% {transform: translateX(-10px) rotateY(10deg);}
+    100% {transform: rotate(-12deg);}
 }
