@@ -4,17 +4,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-image: url(resources/mist.jpg);
+    /* background-image: url(resources/the-swing/foliage.jpg);
     background-size: cover; */
-    mix-blend-mode: lighten;
-    /* background: #131829; */
+    mix-blend-mode: difference;
+    background: linear-gradient(#fa7923, #000000);
 }
 
 #container img {
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
-    height: 100%;
+    width: 100%;
 }
 
 #background {

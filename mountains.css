@@ -4,16 +4,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-image: url(resources/mountains/mountain_background.jpg);
-    background-size: cover; */
-    mix-blend-mode: multiply;
+    mix-blend-mode: difference;
+    background: rgb(206, 191, 124);
 }
 
 #container img {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
+    width: 100%;
 }
 
 #background {
@@ -33,7 +32,8 @@ body {
 
 #foreground {
     z-index: 4;
-    animation: flicker 1s infinite ease-out; /* TODO make better animation */
+    transform-origin: 50% 100%;
+    animation: trees 500ms infinite ease-out; /* TODO make better animation */
 }
 
 @keyframes wind {
@@ -52,4 +52,10 @@ body {
     0% {transform: translateX(-2px) rotate(.1deg);}
     50% {transform: translateX(2px) rotateY(-.1deg);}
     100% {transform: translateX(-2px) rotate(.1deg);}
+}
+
+@keyframes trees {
+    0% {transform: translateX(-0.5px) rotate(.1deg);}
+    50% {transform: translateX(0.5px) rotate(-.1deg);}
+    100% {transform: translateX(-0.5px) rotate(.1deg);}
 }
