@@ -10,6 +10,8 @@ __“Wanderer Above the Sea of Fog” by Caspar David Friedrich__
 __“The Swing” by Jean-Honoré Fragonard__
 ![The Swing](./resources/the_swing.jpg)
 
+Extended photo from <http://www.litlestuff.com/view.asp>
+
 __“Mountain at Collioure” by Andre Derain__
 ![Mountain at Collioure](./resources/mountain_at_collliure.jpg)
 
