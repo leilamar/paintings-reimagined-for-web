@@ -16,5 +16,11 @@
         <img id="ground" src="resources/proto/ground.png"></img>    
         <img id="man" src="resources/proto/man.png"></img>
     </div>
+    <script>
+        const images = document.querySelectorAll('img');
+        images.forEach((img) => {
+            img.style.left = (window.innerWidth/2 - img.width/2) + "px";
+        });
+    </script>
 </body>
 </html>
