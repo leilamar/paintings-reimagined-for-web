@@ -6,6 +6,11 @@ body {
     justify-content: center;
 }
 
+#container {
+    display: flex;
+    align-items: center;
+}
+
 img {
     max-width: 400px;
     padding: 25px;
@@ -17,8 +22,21 @@ img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#mountains {
-    /* margin-top: auto; how to center */
+p {
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+p:hover {
+    opacity: 1;
+}
+
+.artwork p {
+    position: relative;
+    bottom: 27px;
+    left: 30px;
+    /* left: 300px; */
 }
 
 .opaque {
