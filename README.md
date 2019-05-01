@@ -13,7 +13,7 @@ __“The Swing” by Jean-Honoré Fragonard__
 Extended photo from <http://www.litlestuff.com/view.asp>
 
 __“Mountain at Collioure” by Andre Derain__
-![Mountain at Collioure](./resources/mountain_at_collliure.jpg)
+![Mountains at Collioure](./resources/mountains_at_collioure.jpg)
 
 The navigation will be a gallery space that holds the original versions of the paintings; when you click on the original painting, you will be taken to the corresponding web drawing. It reminds me of Super Mario 64 where you navigate to different lands through the different paintings in Peach’s Castle. The paintings might interactively follow the mouse on the screen or have distinct selection behavior. 
 
