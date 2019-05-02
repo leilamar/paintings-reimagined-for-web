@@ -4,6 +4,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 750ms;
 }
 
 #container {
@@ -39,12 +40,6 @@ span {
 span:hover {
     opacity: 1;
 }
-
-/* .artwork p {
-    position: relative;
-    bottom: 27px;
-    left: 30px;
-} */
 
 .opaque {
     opacity: 1;
