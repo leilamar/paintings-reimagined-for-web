@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="fog.css">
-    <title>Prototype</title>
+    <title>Wanderer Above the Sea of Clouds</title>
 </head>
 <body>
     <!-- TODO autoplay -->
     <audio src="resources/proto/wind.mp3" autoplay loop></audio>
+    <img id="man" class="painting" src="resources/proto/man.png"></img>
     <div id="container">
+        <img id="mist" src="resources/proto/mist.jpg">
         <!-- Caspar David Friedrich “Wanderer Above the Sea of Fog” -->
-        <img id="background" src="resources/proto/background.png"></img>
-        <img id="ground" src="resources/proto/ground.png"></img>    
-        <img id="man" src="resources/proto/man.png"></img>
+        <img id="background" class="painting" src="resources/proto/background.png"></img>
+        <img id="ground" class="painting" src="resources/proto/ground.png"></img>    
+        
     </div>
     <script>
         function main() {
-            const images = document.querySelectorAll('img');
+            const images = document.querySelectorAll('.painting');
             images.forEach((img) => {
                 img.style.left = (window.innerWidth/2 - img.width/2) + "px";
             });
         }
         document.addEventListener('DOMContentLoaded', main);
     </script>
+    <script src="play.js"></script>
 </body>
 </html>

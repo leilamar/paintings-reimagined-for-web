@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     height: 100vh;
     display: flex;
@@ -6,29 +6,55 @@ body {
     justify-content: center;
     background-image: url(resources/proto/mist.jpg);
     background-size: cover;
-    mix-blend-mode: lighten; /* lighten */
+    mix-blend-mode: lighten;
+} */
+
+#container {
+    background-image: url(resources/proto/mist.jpg);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    /* mix-blend-mode: lighten; */
 }
 
-#container img {
+#mist {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    mix-blend-mode: lighten;
+}
+
+.painting {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
+    /* mix-blend-mode: lighten; */
 }
 
 #background {
     z-index: 1;
     animation: wind 10s infinite ease;
+    mix-blend-mode: lighten;
 }
 
 #ground {
     z-index: 2;
     animation: shake 3s infinite ease;
+    mix-blend-mode: lighten;
 }
 
 #man {
     z-index: 3;
     animation: flicker 2s infinite ease;
+    /* mix-blend-mode: lighten; */
 }
 
 @keyframes wind {
