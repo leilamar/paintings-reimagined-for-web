@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="prototype.css">
+    <link rel="stylesheet" href="fog.css">
     <title>Prototype</title>
 </head>
 <body>
@@ -17,10 +17,14 @@
         <img id="man" src="resources/proto/man.png"></img>
     </div>
     <script>
-        const images = document.querySelectorAll('img');
-        images.forEach((img) => {
-            img.style.left = (window.innerWidth/2 - img.width/2) + "px";
-        });
+        function main() {
+            const images = document.querySelectorAll('img');
+            images.forEach((img) => {
+                img.style.left = (window.innerWidth/2 - img.width/2) + "px";
+            });
+        }
+        document.addEventListener('DOMContentLoaded', main);
     </script>
+    <script src="resources/play.js"></script>
 </body>
 </html>

@@ -17,45 +17,45 @@ body {
 
 #background {
     z-index: 1;
-    animation: wind 10s infinite ease;
+    animation: wind 5920ms infinite ease; /* 10s */
 }
 
 #orange {
     z-index: 2;
-    animation: shake 3s infinite ease;
+    animation: shake 1480ms infinite ease; /* 3s */
 }
 
 #blue {
     z-index: 3;
-    animation: flicker 2s infinite ease;
+    animation: flicker 740ms infinite ease; /* 2s */
 }
 
 #foreground {
     z-index: 4;
     transform-origin: 50% 100%;
-    animation: trees 500ms infinite ease-out; /* TODO make better animation */
+    animation: trees 370ms infinite ease-out;
 }
 
 @keyframes wind {
-    0% {transform: translateY(-5px) translateY(-1px) rotate(.1deg);}
-    50% {transform: translateX(2px) translateY(5px) rotateZ(-.1deg);}
-    100% {transform: translateX(-5px) translateY(-1px) rotate(.1deg);}
+    0% {transform: translateY(-5px) translateY(-1px) rotate(.1deg) scale(1.01);}
+    50% {transform: translateX(2px) translateY(5px) rotateZ(-.1deg) scale(1.01);}
+    100% {transform: translateX(-5px) translateY(-1px) rotate(.1deg) scale(1.01);}
 }
 
 @keyframes flicker {
-    0% {transform: translateX(-2px) translateY(-1px) rotate(.1deg);}
+    0% {transform: translateX(-2px) translateY(-1px) rotate(.1deg)}
     50% {transform: translateX(2px) translateY(1px) rotateZ(-.1deg);}
     100% {transform: translateX(-2px) translateY(-1px) rotate(.1deg);}
 }
 
 @keyframes shake {
-    0% {transform: translateX(-2px) rotate(.1deg);}
-    50% {transform: translateX(2px) rotateY(-.1deg);}
-    100% {transform: translateX(-2px) rotate(.1deg);}
+    0% {transform: translateX(-2px) rotate(.1deg) scale(1.01);}
+    50% {transform: translateX(2px) rotateY(-.1deg) scale(1.01);}
+    100% {transform: translateX(-2px) rotate(.1deg) scale(1.01);}
 }
 
 @keyframes trees {
-    0% {transform: translateX(-0.5px) rotate(.1deg);}
-    50% {transform: translateX(0.5px) rotate(-.1deg);}
-    100% {transform: translateX(-0.5px) rotate(.1deg);}
+    0% {transform: translateX(-0.5px) rotate(.15deg);}
+    50% {transform: translateX(0.5px) rotate(-.15deg);}
+    100% {transform: translateX(-0.5px) rotate(.15deg);}
 }

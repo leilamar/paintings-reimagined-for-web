@@ -6,7 +6,7 @@ body {
     justify-content: center;
     background-image: url(resources/proto/mist.jpg);
     background-size: cover;
-    mix-blend-mode: lighten;
+    mix-blend-mode: lighten; /* lighten */
 }
 
 #container img {
