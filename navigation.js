@@ -3,17 +3,6 @@ const images = document.querySelectorAll('img');
 const body = document.querySelector('body');
 console.log("body", body);
 
-/* TODO delete */
-function changeOpacity(event) {
-  if (event.target.tagName == 'IMG') { // only work with img elements
-    for (let i = 0; i < images.length; i++) {
-      images[i].className = 'semitransparent'; // change all frame image classes
-    }
-    event.target.className = "opaque"; // keep selected image opaque
-    event.target.addEventListener('mouseout', resetOpacity, false);
-  }
-  event.stopPropagation();
-}
 
 function changeOpacityInd(event) {
     for (let i = 0; i < images.length; i++) {
@@ -24,13 +13,15 @@ function changeOpacityInd(event) {
     event.stopPropagation();
 }
 
-function changeOpacityIndColor(event, color) {
+function changeOpacityIndColor(event) {
     console.log('inside change opacity and color fn')
     for (let i = 0; i < images.length; i++) {
         images[i].className = 'semitransparent'; // change all frame image classes
     }
     event.currentTarget.className = "opaque"; // keep selected image opaque
-    body.style.backgroundColor = 'blue';
+
+    const bgColor = event.currentTarget.getAttribute('data-bgcolor');
+    body.style.backgroundColor = bgColor;
     console.log(body.style.backgroundColor);
     event.currentTarget.addEventListener('mouseleave', resetOpacityAndColor);
     event.stopPropagation();
@@ -48,6 +39,10 @@ function resetOpacityAndColor() {
       images[i].className = 'opaque'; // change all frame image classes
     }
     body.style.backgroundColor = 'white';
-  }
+}
 
-images.forEach(image => image.addEventListener('mouseenter', changeOpacityInd));
+images[0].setAttribute('data-bgcolor', '#82899d');
+images[1].setAttribute('data-bgcolor', '#e59b16');
+images[2].setAttribute('data-bgcolor', '#8caf9d'); //#ae6a55
+
+images.forEach(image => image.addEventListener('mouseenter', changeOpacityIndColor));
