@@ -33,7 +33,6 @@ a {
 
 span {
     font-family: 'Montserrat', sans-serif;
-    /* opacity: 0; TODO fade in text */ 
     transition: opacity 500ms;
     line-height: 25px;
 }
