@@ -4,8 +4,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-image: url(resources/the-swing/foliage.jpg);
-    background-size: cover; */
     mix-blend-mode: difference;
     background: linear-gradient(#fa7923, #000000);
 }

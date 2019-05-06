@@ -43,6 +43,6 @@ function resetOpacityAndColor() {
 
 images[0].setAttribute('data-bgcolor', '#82899d');
 images[1].setAttribute('data-bgcolor', '#e59b16');
-images[2].setAttribute('data-bgcolor', '#8caf9d'); //#ae6a55
+images[2].setAttribute('data-bgcolor', '#8caf9d');
 
 images.forEach(image => image.addEventListener('mouseenter', changeOpacityIndColor));

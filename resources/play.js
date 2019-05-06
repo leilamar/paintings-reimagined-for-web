@@ -6,7 +6,6 @@ function playAudio() {
 
 document.onkeypress = function (e) {
     e = e || window.event;
-    // use e.keyCode
     if(e.keyCode === 32) {
         playAudio();
     }
