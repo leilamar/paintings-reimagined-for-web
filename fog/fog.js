@@ -8,4 +8,4 @@ function main() {
     });
 }
 
-setTimeout(main, 20);
+window.addEventListener('load', main);
