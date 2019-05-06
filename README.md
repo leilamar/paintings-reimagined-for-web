@@ -14,3 +14,5 @@ __“Mountain at Collioure” by Andre Derain__
 ![Mountains at Collioure](./resources/mountains_at_collioure.jpg)
 
 The navigation is a gallery space that holds the original versions of the paintings; when you click on the original painting, you will be taken to the corresponding web drawing. It reminds me of Super Mario 64 where you navigate to different lands through the different paintings in Peach’s Castle. When you hover over one painting, the others fade and the background changes corresponding the painting with which you are interacting.
+
+View the project [here](http://i6.cims.nyu.edu/~lsm389/380/final/navigation.html).
