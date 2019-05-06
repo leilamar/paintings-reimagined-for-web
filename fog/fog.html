@@ -15,18 +15,7 @@
         <img id="ground" src="resources/ground.png"></img>    
         <img id="man" src="resources/man.png"></img>
     </div>
-    <script>
-        function main() {
-            const images = document.querySelectorAll('img');
-            images.forEach((img) => {
-                console.log("window.innerWidth/2", window.innerWidth/2);
-                console.log("img.width/2", img.width/2);
-                console.log("(window.innerWidth/2 - img.width/2)", window.innerWidth/2 - img.width/2);
-                img.style.left = (window.innerWidth/2 - img.width/2) + "px";
-            });
-        }
-        document.addEventListener('DOMContentLoaded', main);
-    </script>
+    <script src="fog.js"></script>
     <script src="../resources/play.js"></script>
 </body>
 </html>
