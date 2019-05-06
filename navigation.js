@@ -6,9 +6,9 @@ console.log("body", body);
 
 function changeOpacityInd(event) {
     for (let i = 0; i < images.length; i++) {
-        images[i].className = 'semitransparent'; // change all frame image classes
+        images[i].className = 'semitransparent';
     }
-    event.currentTarget.className = "opaque"; // keep selected image opaque
+    event.currentTarget.className = "opaque";
     event.currentTarget.addEventListener('mouseleave', resetOpacity);
     event.stopPropagation();
 }
@@ -16,9 +16,9 @@ function changeOpacityInd(event) {
 function changeOpacityIndColor(event) {
     console.log('inside change opacity and color fn')
     for (let i = 0; i < images.length; i++) {
-        images[i].className = 'semitransparent'; // change all frame image classes
+        images[i].className = 'semitransparent';
     }
-    event.currentTarget.className = "opaque"; // keep selected image opaque
+    event.currentTarget.className = "opaque";
 
     const bgColor = event.currentTarget.getAttribute('data-bgcolor');
     body.style.backgroundColor = bgColor;
@@ -30,13 +30,13 @@ function changeOpacityIndColor(event) {
 
 function resetOpacity() {
   for (let i = 0; i < images.length; i++) {
-    images[i].className = 'opaque'; // change all frame image classes
+    images[i].className = 'opaque';
   }
 }
 
 function resetOpacityAndColor() {
     for (let i = 0; i < images.length; i++) {
-      images[i].className = 'opaque'; // change all frame image classes
+      images[i].className = 'opaque';
     }
     body.style.backgroundColor = 'white';
 }
